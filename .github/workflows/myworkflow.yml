@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: myhaction
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+  runs-on: ubuntu-latest
+     
+  steps:
+    - name: log repo name to console
+      run: echo 'Repository name = $GITHUB_REPOSITORY'
+     
+
+
